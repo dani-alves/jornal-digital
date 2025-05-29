@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    background-color: #002930;
+
+}
+
+/* HEADER */
+header {
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    height: 120px;
+    margin: 40px 15vw 30px 15vw;
+    border-radius: 40px;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+}
+
+header img {
+    max-height: 90px;
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+header nav ul li:hover,
+header nav ul li:focus {
+    color: #1D6976;
+}
+
+/* SECTION TITLES */
+.section-2 h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    height: 70px;
+    margin: 40px auto 30px auto;
+    max-width: 350px;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ARTICLES */
+article {
+    background: #1D6976;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+article h5, article h4 {
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+article p {
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* CREDITOS */
+.creditos-p {
+    font-size: 0.85rem;
+    color: #b0e0e6;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: right;
+    opacity: 0.8;
+    padding-right: 12px;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.destaque-p{
+    color: black;
+}
+
+.destaque-H{
+    color: black;
+}
+
+.h5{
+    background-color: #1D6976;
+    border: #1D6976 solid;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* CAROUSEL NOT-3 */
+/* ...existing code... */
+.not-3-carousel-wrapper {
+    max-width: 100vw;
+    margin: 0 auto 40px auto;
+    position: relative;
+    overflow: hidden;
+}
+.not-3-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 50px;
+    justify-content: center;
+}
+.not-3-carousel article {
+    min-width: 300px;
+    max-width: 300px;
+    flex: 0 0 300px;
+    background: #1D6976;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.not-3-carousel article img {
+    width: 100%;
+    max-width: 260px;
+    height: 180px;
+    object-fit: contain; /* Mostra a imagem inteira, sem cortar */
+    background: #fff;
+    border-radius: 16px 16px 0 0;
+    margin: 0 auto 16px auto;
+    display: block;
+}
+
+.destaque {
+    background-image: url(./img/15180-NQ56MC.jpg);
+}
+
+
+/* OUTRAS SEÇÕES */
+.not-1, .not-2, .not-4, .not-5, .not-6, .not-7 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* MELHORIA: CHARADAS */
+.not-6 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 900px;
+}
+.art-charadas, .art-charadas-2 {
+    background: #1D6976;
+    width: 320px;
+    min-height: 380px;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 18px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.art-charadas:hover, .art-charadas-2:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+}
+.art-charadas img, .art-charadas-2 img {
+    width: 100%;
+    max-width: 320px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 10px;
+}
+.art-charadas p, .art-charadas-2 p {
+    margin: 18px 16px 0 16px;
+    font-size: 1.05rem;
+    color: #fff;
+    text-align: center;
+}
+.art-charadas .creditos-p, .art-charadas-2 .creditos-p {
+    margin-top: auto;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+/* MELHORIA: DICA CULTURAL */
+.not-4 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 0 auto 30px auto;
+    width: 100%;
+    max-width: 1100px;
+}
+.art-arraial, .art-arraiá, .art-circuito-dança, .art-namorados {
+    background: #1D6976;
+    width: 250px;
+    min-height: 340px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.art-arraial:hover, .art-arraiá:hover, .art-circuito-dança:hover, .art-namorados:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.art-arraial img,
+.art-arraiá img,
+.art-circuito-dança img,
+.art-namorados img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;              /* aumente a altura */
+    object-fit: contain;        /* mostra a imagem inteira, sem cortar */
+    background: #fff;           /* fundo branco para imagens menores */
+    border-radius: 16px 16px 0 0;
+    margin-bottom: 10px;
+}
+
+.art-arraial h5, .art-arraiá h5, .art-circuito-dança h5, .art-namorados h5 {
+    margin: 12px 0 6px 0;
+    font-size: 1.08rem;
+    color: #fff;
+    text-align: center;
+}
+.art-arraial p, .art-arraiá p, .art-circuito-dança p, .art-namorados p {
+    margin: 0 12px 0 12px;
+    font-size: 0.98rem;
+    color: #fff;
+    text-align: center;
+}
+.art-arraial .creditos-p, .art-arraiá .creditos-p, .art-circuito-dança .creditos-p, .art-namorados .creditos-p {
+    margin-top: auto;
+    margin-bottom: 8px;
+    font-size: 0.8rem;
+}
+
+/* PRIMEIRO CARROSSEL (Bootstrap) */
+.carousel {
+    max-width: 80%; 
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+.carousel-inner img {
+    max-height: 700px; 
+    object-fit: cover; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px; 
+}
+.carousel-item{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(90deg, #002930 0%, #1D6976 100%);
+    min-height: 100px;
+    width: 100%;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 30px 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+footer .creditos {
+    margin: 10px 0 0 0;
+    font-size: 1rem;
+    color: #b0e0e6;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    header {
+        margin: 20px 10px;
+        padding: 10px 5px;
+        flex-direction: column;
+        height: auto;
+        border-radius: 30px;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .section-2 h3 {
+        font-size: 1.1rem;
+        max-width: 90vw;
+        height: auto;
+        padding: 10px 0;
+    }
+    .not-3-carousel article {
+        min-width: 80vw;
+        max-width: 80vw;
+        flex: 0 0 80vw;
+    }
+    .not-4, .not-6 {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        max-width: 98vw;
+    }
+    .art-arraial, .art-arraiá, .art-circuito-dança, .art-namorados,
+    .art-charadas, .art-charadas-2 {
+        width: 95vw;
+        max-width: 350px;
+        min-height: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        margin: 5px 0;
+        padding: 5px 0;
+        flex-direction: column;
+        height: auto;
+        border-radius: 20px;
+    }
+    header img {
+        width: 60px;
+        height: auto;
+    }
+    .section-2 h3 {
+        font-size: 1rem;
+        margin: 20px auto 20px auto;
+        max-width: 100%;
+        border-radius: 30px;
+        padding: 10px 0;
+    }
+    .not-1, .not-2, .not-3, .not-4, .not-5, .not-6, .not-7 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        max-width: 100vw;
+    }
+    .not-3-carousel article {
+        min-width: 90vw;
+        max-width: 90vw;
+        flex: 0 0 90vw;
+    }
+    .not-3-carousel {
+        gap: 10px;
+        padding: 10px 10px;
+    }
+    article img {
+        max-width: 100vw;
+        height: 160px;
+    }
+    footer {
+        height: auto;
+        padding: 20px 0;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
